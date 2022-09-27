@@ -9,6 +9,10 @@
     "start:mfe": "nx serve mfe",
     "start:remote": "nx serve remote",
     "build": "nx build",
+    "build:mfe": "nx build mfe --configuration=prod",
+    "build:remote": "nx build remote --configuration=prod",
+    "docker:mfe": "docker compose up --build --no-start mfe",
+    "docker:remote": "docker compose up --build --no-start remote",
     "test": "nx test",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },

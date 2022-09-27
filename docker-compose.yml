@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mfe:
+    build:
+      context: .
+      dockerfile: apps/mfe/Dockerfile
+    ports:
+      - 4200:80
+  remote:
+    build:
+      context: .
+      dockerfile: apps/remote/Dockerfile
+    ports:
+      - 4201:80
